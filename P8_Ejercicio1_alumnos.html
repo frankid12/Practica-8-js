@@ -17,14 +17,14 @@
             
         
     -->
-    <form name="miFormulario" action="javascript:crearTexto()">
+    < name="miFormulario" action="javascript:crearTexto()" id="miFormulario">
         <label for="nombre">Nombre</label>
         <input name="nombre" id="nombre" placeholder="Nombre" required=""/>
 
         <br/>
         <label for="color">Color</label><br/>
 
-        <select name="color">
+        <select name="color" id="color">
             <option value="red">Rojo</option>
             <option value="green">Verde</option>
             <option value="blue">Azul</option>
@@ -43,6 +43,7 @@
         <br/>
         <label for="tachado">Efectos</label><br/>
 
+        
         <input type="checkbox" name="tachado">Tachado
         <input type="checkbox" name="negrita">Negrita
         <input type="checkbox" name="cursiva">Cursiva
@@ -55,6 +56,7 @@
         <input type="submit" id="enviar" name="enviar" value="Enviar" />
     </form>
     <span id="resultado"></span>
+    <script src="P8_Ejercicio1_alumnos.js"></script>
 </body>
 
 </html>
