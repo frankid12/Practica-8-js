@@ -13,9 +13,7 @@ function crearTexto() {
     let versalita = formulario["versalita"].checked;
     let subrayado = formulario["subrayado"].checked;
 
-    let textConEstilos = crearTextoConEstilos(nombre, color, fuente, tachado, negrita, cursiva, versalita, subrayado);
-
-    resultado.replaceChildren(textConEstilos);
+    resultado.replaceChildren(crearTextoConEstilos(nombre, color, fuente, tachado, negrita, cursiva, versalita, subrayado));
 
     let opciones = "left=100,top=100,width=250,height=300";
     let ventana = window.open("", "", opciones);
@@ -30,7 +28,7 @@ function crearTexto() {
 
     ventana.document.body.appendChild(h1);
     ventana.document.body.appendChild(hr);
-    ventana.document.body.appendChild(textConEstilos);
+    ventana.document.body.appendChild(crearTextoConEstilos(nombre, color, fuente, tachado, negrita, cursiva, versalita, subrayado));
     ventana.document.body.appendChild(button);
 
 }
