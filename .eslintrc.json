@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+       // Reglas para la sintaxis y variables no declaradas
+
+    // Verificar la declaración de variables antes de su uso
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+
+    // Evitar el uso de variables no declaradas
+    "no-undef": "error",
+
+    // Evitar variables no utilizadas
+    "no-unused-vars": "warn"
+
+    // Otras reglas de sintaxis...
+
+    // Ajusta estas reglas según tus necesidades y preferencias
+    }
+}
